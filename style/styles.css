@@ -16,9 +16,8 @@
 
 body {
     font-size: 16px;
-    
-    background-color: #390e42;
 }
+
 
 /*seção header*/
 header {
@@ -115,3 +114,59 @@ header .logo img {
 
 /* fim da seção header*/
 
+/* seção inicio */
+.section-inicio {
+
+    /*background-image: linear-gradient(to left, #390e42 99%, rgb(0, 0, 0));*/
+    background-image: linear-gradient(to left, #390e42 80%, rgb(0, 0, 0) 120%);
+}
+
+.container-inicio {
+    display: flex;
+
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.descricao-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+.descricao-inicio h1{
+
+    font-size: 4em;
+    
+    color: #078C41;
+    text-shadow: aliceblue -2px 1.4px 1px; 
+}
+
+.descricao-inicio p {
+
+    text-align: left;
+
+    font-size: 1.3em;
+
+    color: aliceblue;
+}
+
+.img-inicio {
+    
+    width: 25%;
+    height: auto;
+
+    transition: transform 0.9s ease;
+}
+
+.img-inicio:hover {
+    transform: rotate(-10deg);
+    
+    
+    
+    
+}
