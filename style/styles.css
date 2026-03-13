@@ -80,7 +80,7 @@ header .logo img {
     width: 0px;
     height: 2px;
 
-    background-color: #fbc002;
+    background-color: #a3e720;
 
     transition: width 0.5s ease;
 }
@@ -98,7 +98,7 @@ header .logo img {
     padding:10px;
     
     font-size: 18px;
-    font-weight: 800;
+    font-weight: bolder;
 }
 
 .material-symbols-outlined {
@@ -116,7 +116,7 @@ header .logo img {
     margin-left: 10%;
     padding: 8px;
 
-    background-color: #fbc102e1;
+    background-color: #a3e720;
     border-radius: 50px;
     
 }
@@ -143,24 +143,27 @@ header .logo img {
 .descricao-inicio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     max-width: 800px;
     gap: 20px;
 }
 .descricao-inicio h1{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: clamp(1.5rem, 5vw, 3rem);    
     color: white;
 }
 
 .descricao-inicio p {
 
-    text-align: left;
+    
+    max-width: 550px;
 
-    font-weight: 100;
+    font-weight: 500;
 
-    color: white;
+    color: rgba(255, 255, 255, 0.918);
 }
 
 .logo-img {
@@ -187,21 +190,21 @@ header .logo img {
 }
 
 .container-cardapio{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
 }
 
 .container-cardapio h2{
     text-align:center;
     font-size:2.9rem;
-    color:#ff0192;
+    color:#ffffff;
     letter-spacing: 1px;
 }
 
 .container-cardapio h4{
     text-align:center;
     margin-top:10px;
-    color:#000000;
+    color:#000000d5;
     margin-bottom: 5px;
 }
 
@@ -245,11 +248,11 @@ header .logo img {
 .card:hover{
     transform:translateY(-5px);
 
-    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    box-shadow:0 8px 18px rgba(0, 0, 0, 0.678);
 }
 
 .card h3{
-    font-size:1.4rem;
+    font-size:1.rem;
     margin-bottom:10px;
     color:#3a0a5c;
 }
@@ -320,12 +323,13 @@ header .logo img {
 
     border-radius:12px;
 
-    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.281);
 }
 
 .categoria h5{
     margin-bottom:15px;
-    color:#3a0a5c;
+    color:#ff0192;
+    font-size: 1rem;
 }
 
 .categoria ul{
@@ -342,5 +346,5 @@ header .logo img {
 /* cremes */
 
 .destaque-cremes{
-    background:#f3e5f5;
+    background:#f4d7f8;
 }
