@@ -218,6 +218,7 @@ header .logo img {
 /* grid dos card */
 
 .cardapio-grid{
+    position: relative;
     display:grid;
 
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -225,13 +226,55 @@ header .logo img {
     gap:25px;
 
     margin-bottom:80px;
+
+    z-index: 1;
 }
 
+.cardapio-grid .fruta{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: -110px;
+    bottom: -60px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}
 
+.cardapio-grid .fruta2{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: -80px;
+    bottom: 430px;
+    transform: rotate(-20deg);
+    z-index: -1;
+}
 
+.cardapio-grid .img-chocolate{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 240px;
+    bottom: 480px;
+    transform: rotate(140deg);
+    transform: translateZ(5px);
+    z-index: -1;
+}
+
+.cardapio-grid .graos{
+     position: absolute;
+    width: 50px;
+    height: auto;
+    left: -60px;
+    bottom: 230px;
+    transform: rotate(-20deg);
+    z-index: -1;
+}
 /* card */
 
 .card{
+    position: relative;
+
     background:white;
 
     padding:25px;
@@ -249,6 +292,67 @@ header .logo img {
     transform:translateY(-5px);
 
     box-shadow:0 8px 18px rgba(0, 0, 0, 0.678);
+}
+
+.card .img-copos {
+    position: absolute;
+
+    width: 70px;
+    height: auto;
+    
+}
+
+.card #copo200 {
+    top: 10px;
+    left: 180px;
+}
+
+.card #copo330 {
+    top: -8px;
+    left: 180px;
+}
+
+.card #copo400 {
+    width: 80px;
+    height: auto;
+    top: -8px;
+    left: 180px;
+}
+
+.card #copo500 {
+    width: 85px;
+    height: auto;
+    top: -8px;
+    left: 180px;
+}
+
+.card #copo700 {
+    width: 85px;
+    height: auto;
+    top: -29px;
+    left: 170px;
+}
+
+.card #pote1l {
+    width: 85px;
+    height: auto;
+    top: -15px;
+    left: 170px;
+}
+
+.card #hamburgueria {
+    width: 85px;
+    height: 130px;
+    top: 150px;
+    left: 173px;
+}
+
+.card #barca {
+    width: 200px;
+    height: auto;
+    top: 50px;
+    left: 149px;
+    rotate: -10deg;
 }
 
 .card h3{
