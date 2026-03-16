@@ -196,7 +196,8 @@ header .logo img {
     margin:auto;
 }
 
-.container-cardapio h2{font-family: "Bebas Neue", sans-serif;
+.container-cardapio h2{
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(1.5rem, 5vw, 3rem);
@@ -514,3 +515,116 @@ header .logo img {
 .img-instagram{
     width: 30px;
 }
+/* fim da seção sobre */
+
+                                        /* incio da seção contato */
+
+
+.section-contato{
+    padding:80px 20px;
+    background:#f7f7f7;
+}
+
+.container-contato{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.container-contato h2{
+     font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color:#3a0a5c;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#000000d5;
+    margin-bottom:50px;
+}
+
+.contato-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.contato-grid a {
+    text-decoration: none;
+}
+
+.contato-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.container-contato img {
+    filter: invert(60%) sepia(85%) saturate(4000%) hue-rotate(265deg) brightness(70%) contrast(110%);
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.contato-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.contato-card h3{
+    color:#3a0a5c;
+    margin-bottom:10px;
+}
+
+.contato-card p{
+    color:#000000d5;
+}
+
+.btn-whatsapp{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#3a0a5c;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn-whatsapp:hover{
+    background:#3a0a5ce9;
+}
+/* ff 
+
+
+.section-contato{
+    padding: 80px 20px ;
+    
+    background-color: #390e42e5;
+}
+
+.container-contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-contato h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+*/
