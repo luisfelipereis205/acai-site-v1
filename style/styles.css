@@ -599,32 +599,66 @@ header .logo img {
 .btn-whatsapp:hover{
     background:#3a0a5ce9;
 }
-/* ff 
+ /* fim da seção contatos */
 
+                            /* Inicio da seção footer*/
 
-.section-contato{
-    padding: 80px 20px ;
-    
-    background-color: #390e42e5;
+.section-footer{
+    padding:80px 20px;
+    background-image: linear-gradient(to left, #1f0723 90%, rgb(0, 0, 0) 120%);
 }
 
-.container-contato{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.container-contato h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    margin-bottom: 10px;
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+    place-items: center;
+    gap: 25px;
     color: white;
 }
 
+.logo-footer{
+    width: 30%;
+}
 
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none;
+}
 
-*/
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.431);
+}
+
+.footer-menu ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footer-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none;
+}
+
+.footer-contatos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.431);
+}
+
+.footer-contatos ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footer-contatos a {
+    color: inherit;
+    text-decoration: none;
+}
