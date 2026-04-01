@@ -3,54 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios"
+    />
     <link rel="stylesheet" href="style/styles.css" />
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  </style>
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-  </style>
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-  </style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
 
     <title>Açai</title>
   </head>
   <body>
     <header>
+
+
       <div class="container-header">
-        <div class="logo"><img src="imagens/logo.png" alt="logo" class="logo-img" /></div>
+        <div class="logo">
+          <img src="imagens/logo.png" alt="logo" class="logo-img" />
+        </div>
+
+        <div class="btn-hambuguer" id="menu-hambuguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <nav class="menu-header">
           <ul class="list-header">
             <li class="item">INICIO</li>
             <li class="item">CARDÁPIO</li>
             <li class="item">SOBRE</li>
             <li class="item">CONTATOS</li>
-            <div class="container-seta">
-              <li class="item-btn">PEDIR AGORA </li><span class="material-symbols-outlined">
-              arrow_forward_ios
-              </span>
-            </div>
+
+            <li class="item-btn">
+              PEDIR AGORA
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </li>
           </ul>
           <div class="stripe"></div>
           <div class="stripe"></div>
           <div class="stripe"></div>
         </nav>
       </div>
+      
     </header>
 
     <main>
       <section class="section-inicio">
         <div class="container-inicio">
-          <img src="imagens/design-copo.png" alt="açai" class="img-inicio"/>
+          <img src="imagens/design-copo.png" alt="açai" class="img-inicio" />
           <div class="descricao-inicio">
             <h1>O verdadeiro sabor do açaí, do jeito que você merece.</h1>
             <p>
-              Selecionamos os melhores ingredientes para oferecer um açaí intenso,
-              nutritivo e irresistível, perfeito para qualquer momento do seu dia.
+              Selecionamos os melhores ingredientes para oferecer um açaí
+              intenso, nutritivo e irresistível, perfeito para qualquer momento
+              do seu dia.
             </p>
           </div>
+          <li class="item-btn-inicio">
+              PEDIR AGORA
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </li>
         </div>
       </section>
 
@@ -59,68 +79,116 @@
           <h2>Cardápio</h2>
           <h4>Nossos tamanhos</h4>
           <p>Escolha o tamanho ideal para você</p>
-          
+
           <div class="cardapio-grid">
             <div class="card">
               <h3>200ml</h3>
               <p class="preco">R$10,00</p>
               <p class="info">1 cobertura + 2 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/copo200ml (2).png" alt="copo de 200ml de açai" class="img-copos" id="copo200">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%20200ml.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/copo200ml (2).png"
+                alt="copo de 200ml de açai"
+                class="img-copos"
+                id="copo200"
+              />
             </div>
             <div class="card">
               <h3>330ml</h3>
               <p class="preco">R$14,00</p>
               <p class="info">1 cobertura + 3 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/copo330ml (2).png" alt="copo de 330ml de açai" class="img-copos" id="copo330">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%20330ml.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/copo330ml (2).png"
+                alt="copo de 330ml de açai"
+                class="img-copos"
+                id="copo330"
+              />
             </div>
             <div class="card">
               <h3>400ml</h3>
               <p class="preco">R$17,00</p>
               <p class="info">1 cobertura + 4 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/copo400ml (2).png" alt="copo de 400ml de açai" class="img-copos" id="copo400">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%20400ml.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/copo400ml (2).png"
+                alt="copo de 400ml de açai"
+                class="img-copos"
+                id="copo400"
+              />
             </div>
             <div class="card">
               <h3>500ml</h3>
               <p class="preco">R$20,00</p>
               <p class="info">1 cobertura + 4 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/copo500ml (2).png" alt="copo de 500ml de açai" class="img-copos" id="copo500">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%20500ml.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/copo500ml (2).png"
+                alt="copo de 500ml de açai"
+                class="img-copos"
+                id="copo500"
+              />
             </div>
             <div class="card">
               <h3>700ml</h3>
               <p class="preco">R$27,00</p>
               <p class="info">1 cobertura + 5 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/copo770ml (2).png" alt="copo de 700ml de açai" class="img-copos" id="copo700">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%20700ml.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20%0AComplemento%205:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/copo770ml (2).png"
+                alt="copo de 700ml de açai"
+                class="img-copos"
+                id="copo700"
+              />
             </div>
             <div class="card">
               <h3>1 Litro</h3>
               <p class="preco">R$40,00</p>
               <p class="info">1 cobertura + 5 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/pote1L (2).png" alt="copo de 1L de açai" class="img-copos" id="pote1l">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20um%20açaí%20de%201%20Litro.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20%0AComplemento%205:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/pote1L (2).png"
+                alt="copo de 1L de açai"
+                class="img-copos"
+                id="pote1l"
+              />
             </div>
             <div class="card">
               <h3>Hamburgueria</h3>
               <p class="preco">R$15,00</p>
               <p class="info">1 cobertura + 4 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/hamburgueria (2).png" alt="Hamburgueria de açai" class="img-copos" id="hamburgueria">
+              <a href="https://wa.me/5598981566774?text=Olá,%20gostaria%20de%20uma%20Hamburgueria%20de%20açaí.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/hamburgueria (2).png"
+                alt="Hamburgueria de açai"
+                class="img-copos"
+                id="hamburgueria"
+              />
             </div>
             <div class="card">
               <h3>Barca M</h3>
               <p class="preco">R$27,00</p>
               <p class="info">1 cobertura + 5 complementos</p>
-              <a href="#" class="btn-card">Veja</a>
-              <img src="imagens/barcaM (2).png" alt="Barca M de açai" class="img-copos" id="barca">
+              <a href="https://wa.me/5598999999999?text=Olá,%20gostaria%20de%20uma%20Barca%20M%20de%20açaí.%0A%0A1%20cobertura:%20%0AComplemento%201:%20%0AComplemento%202:%20%0AComplemento%203:%20%0AComplemento%204:%20%0AComplemento%205:%20" class="btn-card">Pedir</a>
+              <img
+                src="imagens/barcaM (2).png"
+                alt="Barca M de açai"
+                class="img-copos"
+                id="barca"
+              />
             </div>
-            <img src="imagens/fruta-acai2.png" alt="fruta açai" class="fruta2">
-            <img src="imagens/fruta-acai.png" alt="fruta açai" class="fruta">
-            <img src="imagens/pedacos-chocolate.png" alt="fruta açai" class="img-chocolate">
-            <img src="imagens/graos.png" alt="fruta açai" class="graos">
+            <img
+              src="imagens/fruta-acai2.png"
+              alt="fruta açai"
+              class="fruta2"
+            />
+            <img src="imagens/fruta-acai.png" alt="fruta açai" class="fruta" />
+            <img
+              src="imagens/pedacos-chocolate.png"
+              alt="fruta açai"
+              class="img-chocolate"
+            />
+            <img src="imagens/graos.png" alt="fruta açai" class="graos" />
           </div>
 
           <div class="container-complementos">
@@ -175,7 +243,6 @@
                   <li>Creme de Cupuaçu (+ R$4,00)</li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
@@ -183,63 +250,74 @@
 
       <section class="section-sobre">
         <div class="container-sobre">
-
           <div class="descricao-sobre">
             <h2>Sobre nossa loja</h2>
-            <p class="paragrafo-sobre" id="espacamento">Somos apaixonados por açaí e por oferecer momentos de sabor e energia para nossos clientes. Trabalhamos com ingredientes selecionados e preparados com cuidado para garantir um açaí cremoso, refrescante e cheio de qualidade.
+            <p class="paragrafo-sobre" id="espacamento">
+              Somos apaixonados por açaí e por oferecer momentos de sabor e
+              energia para nossos clientes. Trabalhamos com ingredientes
+              selecionados e preparados com cuidado para garantir um açaí
+              cremoso, refrescante e cheio de qualidade.
             </p>
-            <p class="paragrafo-sobre">Nosso objetivo é proporcionar uma experiência única, permitindo que cada pessoa monte o seu açaí do jeito que preferir, com diversas coberturas, frutas e complementos deliciosos.</p>
+            <p class="paragrafo-sobre">
+              Nosso objetivo é proporcionar uma experiência única, permitindo
+              que cada pessoa monte o seu açaí do jeito que preferir, com
+              diversas coberturas, frutas e complementos deliciosos.
+            </p>
           </div>
-          <img src="imagens/logo3.png" alt="" class="img-sobre">
+          <img src="imagens/logo3.png" alt="" class="img-sobre" />
         </div>
       </section>
 
-    <section class="section-contato">
-      <div class="container-contato">
+      <section class="section-contato">
+        <div class="container-contato">
+          <h2>Contatos</h2>
+          <p class="subtitulo">Fale com a gente ou venha nos visitar.</p>
 
-      <h2>Contatos</h2>
-      <p class="subtitulo">Fale com a gente ou venha nos visitar.</p>
+          <div class="contato-grid">
+            <div class="contato-card">
+              <img src="imagens/address-icon.png" alt="" />
+              <h3>Endereço</h3>
+              <p>Rua Exemplo, 123</p>
+            </div>
 
-      <div class="contato-grid">
+            <a href="https://wa.me/559884952669" target="_blank">
+              <div class="contato-card">
+                <img src="imagens/whatsapp-color-icon.png" alt="" />
+                <h3>WhatsApp</h3>
+                <p>+55 98 8495-2669</p>
+              </div>
+            </a>
 
-      <div class="contato-card">
-        <img src="imagens/address-icon.png" alt="">
-        <h3>Endereço</h3>
-        <p>Rua Exemplo, 123</p>
-      </div>
+            <div class="contato-card">
+              <img src="imagens/clock-icon.png" alt="" />
+              <h3>Horário</h3>
+              <p>17h às 22h</p>
+            </div>
 
-      <a href="https://wa.me/559884952669" target="_blank">
-        <div class="contato-card">
-          <img src="imagens/whatsapp-color-icon.png" alt="">
-          <h3>WhatsApp</h3>
-          <p>+55 98 8495-2669</p>
+            <a
+              href="https://www.instagram.com/acai_ki_te_surpreende?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+            >
+              <div class="contato-card">
+                <img src="imagens/instagram.png" alt="" />
+                <h3>Instagram</h3>
+                <p>@acai_ki_te_surpreende</p>
+              </div>
+            </a>
+          </div>
+
+          <a
+            href="https://wa.me/559884952669"
+            class="btn-whatsapp"
+            target="_blank"
+            >Pedir Agora</a
+          >
         </div>
-      </a>
-
-      <div class="contato-card">
-        <img src="imagens/clock-icon.png" alt="">
-        <h3>Horário</h3>
-        <p>17h às 22h</p>
-      </div>
-
-      <a href="https://www.instagram.com/acai_ki_te_surpreende?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-        <div class="contato-card">
-          <img src="imagens/instagram.png" alt="">
-          <h3>Instagram</h3>
-          <p>@acai_ki_te_surpreende</p>
-        </div>
-      </a>
-
-      </div>
-
-      <a href="https://wa.me/559884952669" class="btn-whatsapp" target="_blank">Pedir Agora</a>
-
-      </div>
-    </section>
+      </section>
     </main>
     <footer class="section-footer">
       <div class="container-footer">
-        <img src="imagens/logo.png" alt="logo" class="logo-footer">
+        <img src="imagens/logo.png" alt="logo" class="logo-footer" />
 
         <div class="footer-menu">
           <h4>Menu de navegação</h4>
@@ -257,7 +335,10 @@
             <li>Rua Exemplo, 123</li>
             <li>+55 98 8495-2669</li>
             <li>17h às 22h</li>
-            <a href="https://www.instagram.com/acai_ki_te_surpreende?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <a
+              href="https://www.instagram.com/acai_ki_te_surpreende?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+            >
               <li>@acai_ki_te_surpreende</li>
             </a>
           </ul>

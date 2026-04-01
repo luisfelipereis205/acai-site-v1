@@ -24,6 +24,7 @@
 
 body {
     font-size: 16px;
+    overflow-x: hidden; /* esconde o excesso */
 }
 
 
@@ -31,15 +32,17 @@ body {
 header {
     position: fixed;
     top: 0;
+    left: 0;
     
     width: 100%;
     height: auto;
-    padding: 20px 2%;
-
+    padding: 20px 5%;
+    z-index: 3;
 }
 
 header .logo img {
-    width: 14%;
+    width: 100%;
+    max-width: 120px;
     height: auto;
     
 }
@@ -47,20 +50,38 @@ header .logo img {
 .container-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
     color: white;
 }
 
+.btn-hambuguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.btn-hambuguer span{
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+    background: white;
+}
 .menu-header {
-    width: 40%;
+    max-width: 600px;
+    width: 100%;
 }
  
 .list-header {
     display: flex;
     align-items: center;
-    
-    gap: 30px;
-    padding: 20px;
+    justify-content: flex-end;
+
+    gap: 20px;
+    padding: 10 0px;
 
     font-weight: 700;
 }
@@ -81,7 +102,6 @@ header .logo img {
     height: 2px;
 
     background-color: #a3e720;
-
     transition: width 0.5s ease;
 }
 
@@ -95,12 +115,23 @@ header .logo img {
     justify-content: center;
     
     margin-left: auto;
-    padding:10px;
+    padding:10px 15px;
     
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bolder;
+
+    gap: 20px;
+    background-color: #a3e720;
+    text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.185);
+    border-radius: 50px;
+
+    transition: transform 1s ease;
+    cursor: pointer;
 }
 
+.item-btn:hover{
+    transform: scale(1.1); text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.185);
+}
 .material-symbols-outlined {
     
     padding: 10px;
@@ -109,23 +140,11 @@ header .logo img {
     border-radius: 40px;
 }
 
-.container-seta {
-    display: flex;
-    gap: 15px;
-
-    margin-left: 10%;
-    padding: 8px;
-
-    background-color: #a3e720;
-    border-radius: 50px;
-    
-}
-
 /* fim da seção header*/
 
                                         /* seção inicio */
 .section-inicio {
-
+    padding: 120px 5% 80px;
     /*background-image: linear-gradient(to left, #390e42 95%, rgb(0, 0, 0));*/
     background-image: linear-gradient(to left, #390e42 90%, rgb(0, 0, 0) 120%);
 }
@@ -133,19 +152,20 @@ header .logo img {
 .container-inicio {
     display: flex;
 
-    gap: 30px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
     
 }
-
 
 .descricao-inicio {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     justify-content: center;
-    max-width: 800px;
+    max-width: 710px;
     gap: 20px;
 }
 .descricao-inicio h1{
@@ -154,13 +174,14 @@ header .logo img {
     font-style: normal;
     font-size: clamp(1.5rem, 5vw, 3rem);    
     color: white;
+    line-height: 1.2;
 }
 
 .descricao-inicio p {
     font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+    line-height: 1.6;
     max-width: 550px;
 
     font-weight: 500;
@@ -173,7 +194,8 @@ header .logo img {
 }
 .img-inicio {
     
-    width: 25%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
 
     transition: transform 1s ease;
@@ -183,7 +205,23 @@ header .logo img {
 .img-inicio:hover {
     transform: rotate(-10deg);
 }
-/* fim da seção header*/
+
+.item-btn-inicio {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    
+    margin-left: auto;
+    padding:10px 15px;
+    
+    font-size: 1rem;
+    font-weight: bolder;
+
+    gap: 20px;
+    background-color: #a3e720;
+    border-radius: 50px;
+}
+/* fim da seção inicio*/
 
                     /* seção cardápio */
 .section-cardapio{
@@ -247,7 +285,8 @@ header .logo img {
 
 .cardapio-grid .fruta2{
     position: absolute;
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     height: auto;
     left: -80px;
     bottom: 430px;
@@ -291,6 +330,7 @@ header .logo img {
     box-shadow:0 4px 12px rgba(0,0,0,0.08);
 
     transition:0.3s;
+    
 }
 
 .card:hover{
@@ -301,67 +341,41 @@ header .logo img {
 
 .card .img-copos {
     position: absolute;
-
-    width: 70px;
+    top: -40px;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 90px;
     height: auto;
-    
+    transition: transform 0.3s ease;
 }
 
-.card #copo200 {
-    top: 10px;
-    left: 180px;
+.card:hover .img-copos {
+    transform: translateX(-50%) translateY(-5px) scale(1.05);
 }
 
-.card #copo330 {
-    top: -8px;
-    left: 180px;
+/* Ajustes específicos para cada copo (desktop) */
+#copo200 { width: 80px; top: -5px; }
+#copo330 { width: 85px; top: -30px; }
+#copo400 { width: 90px; top: -20px;}
+#copo500 { width: 95px; top: -20px;}
+#copo700 { width: 100px; top: -45px;}
+#pote1l { width: 100px;}
+#hamburgueria { width: 85px; top: 155px; left: 215px; }
+#barca { width: 140px; transform: translateX(-50%) rotate(-10deg); top: 120px; left: 215px; }
+
+.fruta, .fruta2, .img-chocolate, .graos {
+    position: absolute;
+    z-index: -1;
+    transition: transform 0.5s ease;
 }
 
-.card #copo400 {
-    width: 80px;
-    height: auto;
-    top: -8px;
-    left: 180px;
-}
-
-.card #copo500 {
-    width: 85px;
-    height: auto;
-    top: -8px;
-    left: 180px;
-}
-
-.card #copo700 {
-    width: 85px;
-    height: auto;
-    top: -29px;
-    left: 170px;
-}
-
-.card #pote1l {
-    width: 85px;
-    height: auto;
-    top: -15px;
-    left: 170px;
-}
-
-.card #hamburgueria {
-    width: 85px;
-    height: 130px;
-    top: 150px;
-    left: 173px;
-}
-
-.card #barca {
-    width: 200px;
-    height: auto;
-    top: 50px;
-    left: 149px;
-    rotate: -10deg;
-}
+.fruta { left: -100px; bottom: -50px; transform: rotate(-40deg); }
+.fruta2 { left: -80px; bottom: 430px; transform: rotate(-20deg); }
+.img-chocolate { left: 240px; bottom: 480px; transform: rotate(140deg); }
+.graos { left: -60px; bottom: 230px; transform: rotate(-20deg); }
 
 .card h3{
-    font-size:1.rem;
+    font-size:1rem;
     margin-bottom:10px;
     color:#3a0a5c;
 }
@@ -378,8 +392,6 @@ header .logo img {
     color:#666;
     margin-bottom:20px;
 }
-
-
 
 /* botao */
 
@@ -661,4 +673,238 @@ header .logo img {
 .footer-contatos a {
     color: inherit;
     text-decoration: none;
+}
+
+/* fim da seção footer*/
+
+        /*Responsividade*/
+
+@media (max-width:1200px){
+
+.container-sobre{
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-sobre{
+    height:auto;
+    max-width:400px;
+}
+
+    /* cardapio */
+
+    #hamburgueria {
+        width: 85px;
+        top: 155px;
+        left: 84%;
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* TABLET */
+
+
+@media (max-width:831px){
+
+header{
+    padding:15px 5%;
+}
+
+header .logo img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;   
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+/* menu */
+
+.list-header{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.item-btn{
+    margin-left:0;
+}
+
+/* inicio */
+
+.container-inicio{
+    flex-direction:column;
+    text-align:center;
+}
+
+.descricao-inicio{
+    align-items:center;
+}
+
+.img-inicio {
+    max-width: 350px;
+}
+
+
+/* cardapio */
+
+.cardapio-grid{
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+
+.card .img-copos{
+    position:static;
+    transform:none;
+    margin-bottom:10px;
+}
+
+.card .img-copos {
+        position: static;
+        transform: none;
+        display: block;
+        margin: 20px auto 15px auto;
+        width: 70%;
+        max-width: 120px;
+    }
+
+.card:hover .img-copos {
+        transform: none; /* impede movimento no hover */
+    }
+
+    #barca { width: 90%; transform: none; margin: 20px auto; }
+
+    .fruta, .fruta2, .img-chocolate, .graos {
+        display: none;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .cardapio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* sobre */
+
+    .container-sobre{
+    flex-direction:column;
+    }
+
+    .img-sobre{
+    max-width:350px;
+    }
+
+    /* footer */
+
+    .container-footer{
+    text-align:center;
+    }
+
+    .logo-footer{
+    width:120px;
+    }
+}
+/* CELULAR */
+
+
+@media (max-width:830px){
+
+body{
+    font-size:14px;
+}
+
+/* header */
+
+.list-header{
+    display:none; /* pra virar um hambuguer */
+}
+
+nav.ul {
+    display: none;
+}
+
+.btn-hambuguer {
+    display: flex;
+    align-items: end;
+}
+
+
+
+/* inicio */
+
+.section-inicio{
+    padding:100px 20px 60px;
+}
+
+.descricao-inicio h1{
+    font-size:2rem;
+}
+
+.item-btn-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.185);
+}
+
+/* card */
+.section-cardapio{
+    background-image: linear-gradient(to top, #91cf1d 98%,#390e42 105%);}
+.card{
+    padding:20px;
+}
+
+.card .img-copos {
+    position: static;
+    transform: none;
+
+    width: 80px;
+    height: auto;
+    display: block;
+
+    margin: 20px auto 10px auto;
+}
+.container-cardapio{
+    position: relative;
+}
+.container-cardapio h2{
+    margin-top: 40px;
+}
+
+.card:hover .img-copos {
+        transform: none; /* impede movimento no hover */
+    }
+
+ #hamburgueria { width: 35%; transform: none; margin: 20px auto; 
+}
+/* grid */
+
+.cardapio-grid{
+    grid-template-columns:1fr;
+}
+
+/* complementos */
+
+.complementos-grid{
+    grid-template-columns:1fr;
+}
+
+/* contato */
+
+.contato-grid{
+    grid-template-columns:1fr;
+}
+
+/* footer */
+
+.container-footer{
+    grid-template-columns:1fr;
+}
+
 }
