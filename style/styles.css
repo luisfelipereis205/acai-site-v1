@@ -130,7 +130,12 @@ header .logo img {
 }
 
 .item-btn:hover{
-    transform: scale(1.1); text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.185);
+    transform: scale(1.1); 
+}
+
+.list-header a {
+    color: white;
+    text-decoration: none;
 }
 .material-symbols-outlined {
     
@@ -158,6 +163,10 @@ header .logo img {
 
     flex-wrap: wrap;
     
+}
+.container-inicio a {
+    color: white;
+    text-decoration: none;
 }
 
 .descricao-inicio {
